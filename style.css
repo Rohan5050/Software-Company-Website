@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    scroll-behavior: smooth;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #1faf4a;
+    transform-origin: right;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    margin: 15px;
+    margin-left: 40px;
+    transition: .5s;
+    padding: 5px;
+
+}
+
+/*.btnLogin-popup {
+    width: 100px;
+    height: 35px;
+}*/
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+
+}
+
+.logo {
+    color: rgb(91, 207, 91);
+}
+
+body {
+    height: 620vh;
+    overflow-x: hidden;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+    color: white;
+ 
+}
+
+.img1 {
+   width: 100%;
+   height: 600px;
+   filter: blur(3px);
+}
+
+.firsttxt {
+    position: absolute;
+    color: #15cf4d;
+    bottom: 72%;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    animation: moveForward 1s ease-in-out;
+}
+
+.center {
+    position: absolute;
+    bottom: 50%;
+    padding: 5px;
+    text-align: center;
+    font-size: 55px;
+}
+
+.sectxt {
+    position: absolute;
+    bottom: 38%;
+    text-align: center;
+    padding: 5px;
+    color: rgb(175, 170, 170);
+    font-size: 20px;
+    animation: movebackwards 1s ease-in-out;
+}
+
+.abt {
+    font-size: 22px;
+    color: green;
+    letter-spacing: 2px;
+}
+
+.desc {
+    color: black;
+    font-size: 35px;
+}
+
+.para {
+    font-size: 18px;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(102, 243, 102);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border-style: double;
+}
+.firstsection {
+    margin: 50px;
+}
+
+
+
+.img2 {
+    display: block;
+    float: right;
+    bottom: 10px;
+    padding: 5px;
+    width: 75vh;
+    height: 50vh;
+}
+
+
+.secondsection {
+    color:white;
+    background-color: #000;
+    width: 100%;
+    height: 130vh;
+}
+   
+
+.rightsection {
+    display: block;
+    text-align: center;
+    padding: 75px;
+    font-size: 50px;
+}
+
+.txt1 {
+    padding: 20px;
+    font-size: 22px;
+}
+
+
+@keyframes moveForward {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes movebackwards {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+    
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width */
+    grid-gap: 20px; /* Adjust gap between cards */
+}
+
+.card {
+    background-color: white;
+    height: 425px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.card-content {
+    color: black;
+    padding: 20px;
+}
+
+.para1 {
+    font-size: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+.thirdsection {
+    padding: 15px;
+}
+
+.para2 {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust card width */
+    grid-gap: 20px; /* Adjust gap between cards */
+}
+
+.card1 {
+    background-color: white;
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.imgt {
+    width: 100px;
+    height: 80px;
+    margin-left: 120px;
+}
+
+.txt5 {
+    text-align: center;
+    padding: 5px;
+}
+
+.fourthsection {
+    background-color: #e2dede;
+    width: 100%;
+    height: 120vh;
+    padding: 12px;
+}
+
+.box2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust card width */
+    grid-gap: 20px; /* Adjust gap between cards */
+
+}
+
+.card2 {
+    background-color: white;
+    height: 250px;
+    padding: 20px;
+    margin-right: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.imgt1 {
+    width: 250px;
+    height: 180px;
+    margin-left: 55px;
+}
+
+
+#grid-item {
+    position: relative;
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.grid1 {
+    text-align: center;
+}
+
+.imgt2 {
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#front, #back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back of the flipped element */
+}
+
+#front {
+    background-color: #f0f0f0;
+}
+
+#back {
+    background-color: #e0e0e0;
+    transform: rotateY(180deg); /* Initially hide the back content */
+}
+
+#grid-item:hover #front {
+    transform: rotateY(-180deg); /* Rotate the front content on hover */
+}
+
+#grid-item:hover #back {
+    transform: rotateY(0deg); /* Rotate the back content on hover */
+}
+
+.para3 {
+    padding: 12px;
+    font-size: 22px;
+}
+
+.btn5 {
+    display: inline-block;
+    margin-left: 100px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
