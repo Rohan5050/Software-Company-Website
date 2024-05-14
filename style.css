@@ -202,18 +202,35 @@ body {
 }
 
 .abt {
-    font-size: 22px;
+    font-size: 18px;
     color: green;
     letter-spacing: 2px;
+    position: relative;
+    left: 50px;
 }
 
 .desc {
     color: black;
-    font-size: 35px;
+    font-size: 40px;
+    position: relative;
+    left: 50px;
 }
 
 .para {
     font-size: 18px;
+    position: relative;
+    left: 50px;
+}
+
+.btn1 {
+    color: white;
+    background-color: rgb(102, 243, 102);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border-style: double;
+    position: relative;
+    left: 50px;
 }
 
 .btn {
@@ -223,11 +240,12 @@ body {
     padding: 10px;
     font-size: 18px;
     border-style: double;
+    position: relative;
+    left: 0;
 }
 .firstsection {
     width: 100%;
-    height: 350px;
-    margin: 80px;
+    height: 450px;
 }
 
 
@@ -235,8 +253,10 @@ body {
 .img2 {
     display: block;
     float: right;
+    position: relative;
     bottom: 10px;
-    padding: 5px;
+    padding: 10px;
+    right: 10px;
     width: 75vh;
     height: 50vh;
 }
@@ -582,7 +602,7 @@ body {
     position: relative;
     padding: 5px;
     margin-left: 60px;
-    bottom: -32px;
+    bottom: -35px;
     
 }
 
@@ -635,6 +655,7 @@ footer {
 
 .footertxt {
     color: white;
+    padding: 15px;
 }
 
 .formaln {
@@ -659,9 +680,17 @@ footer {
     height: 50px;
     position: relative;
     border-radius: 50%;
-    top: -10px;
+    top: 50px;
+    right:-60px;
+    padding: 8px;
 
     
+}
+
+#reset {
+    position: relative;
+    right: -10px;
+
 }
 
 footer .footer-rights {

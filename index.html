@@ -8,14 +8,14 @@
     <title>Software Website</title>
 </head>
 <body>
-  <div class="container">
+  <div id="sec-1" class="container">
         <header>
           <nav id="navbar" class="navigation">
             <h2 class="logo">𝓘𝓷𝓭𝓾𝓼 𝓢𝓸𝓵𝓾𝓽𝓲𝓸𝓷</h2>
-            <a class="li" href="#">Home</a>
-            <a class="li" href="#">About Us</a>
-            <a class="li" href="#">Reviews</a>
-            <a class="li" href="#">Contact</a>
+            <a class="li" href="#sec-1">Home</a>
+            <a class="li" href="#sec-2">About Us</a>
+            <a class="li" href="#sec-3">Services</a>
+            <a class="li" href="#sec-6">Contact Us</a>
             <button class="btnLogin-popup"><b>Call Now</b></button>
           </nav>
         </header>
@@ -35,7 +35,7 @@
     </div>
     <br>
     <img class="img2" src="image1.jpeg">
-    <section class="firstsection">
+    <section id="sec-2" class="firstsection">
         <div class="abt">
             <h3>About Us</h3>
         </div>
@@ -55,12 +55,12 @@
             </div>
         </div>
         <br>
-        <button class="btn">Services &rarr;</button>
+        <button class="btn1"><a href="#sec-3">Services &rarr;</a></button>
         
     </section>
 
 
-    <section class="secondsection">
+    <section id="sec-3" class="secondsection">
         <div class="rightsection">
             Glimpse of Our Services
             <div class="txt1">
@@ -106,7 +106,7 @@
         </div>
     </section>
 
-    <section class="thirdsection">
+    <section  class="thirdsection">
         <div class="rightsection">
             <h4>Why Choose Us ?</h4>
             <p class="para2">Discover the Indus Solution Advantage — a commitment to innovation, personalized solutions, and a proven track record in
@@ -150,7 +150,7 @@
 
     <br>
 
-    <section class="fourthsection">
+    <section id="sec-4" class="fourthsection">
         <div class="rightsection">
             <h3>Discover Our Projects</h3>
             <p class="para2">Take a closer look at our previous projects, showcasing the successful collaborations and impactful solutions we’ve delivered for our valued clients.</p>
@@ -194,7 +194,7 @@
         </div>
     </section>
 
-    <section class="fifthsection">
+    <section id="sec-5" class="fifthsection">
 
         <div class="parallax">
             <div class="rightsection">
@@ -284,7 +284,7 @@
 
 
     <footer>
-        <div class="footer-first">
+        <div id="sec-6" class="footer-first">
             <h1 class="text-grey">Indus Solution</h1>
             <p class="text-grey">We develop websites for your business,bringing your vision to life and <div class="text-grey">
                 propelling your business into the digital realm.
@@ -294,21 +294,47 @@
             <br>
             <div>
              <span>
+                <section>
+                    <a  href="https://youtube.com" target="_blank">
+                        <img class="imagesec" src="youtube_download.jpg" alt="youtube" width="40" height="40">
+                    </a>
+                    
+                    <a href="https://instagram.com" target="_blank">
+                        <img class="imagesec" src="insta_download.jpg" alt="instagram" width="30" height="30">
+                    </a>
+        
+                    <a href="https://telegram.com" target="_blank">
+                        <img class="imagesec" src="tele_download.jpg" alt="telegram" width="30" height="30">
+                    </a>
+                </section>
+                
+                <!---
                 <img class="img-1" src="download4 (1).jpg" alt="img-1">
                 <img src="download 5 (1).jpg" alt="img-1" class="img-1">
                 <img src="download 3 (1).jpg" alt="img-2" class="img-1">
                 <img src="download55.jpeg" alt="img-3" class="img-1">
+                -->
              </span>
             </div>
 
             <ul class="list">
                 <h2 class="txtsp">Quick Links</h2>
 
-                <li class="txtaln">Home</li>
-                <li class="txtaln">About Us</li>
-                <li class="txtaln">Reviews</li>
-                <li class="txtaln">Services</li>
-                <li class="txtaln">Contact Us</li>
+                <li class="txtaln">
+                    <a href="#sec-1">Home</a>
+                </li>
+                <li class="txtaln">
+                    <a href="#sec-2">About Us</a>
+                </li>
+                <li class="txtaln">
+                    <a href="#sec-3">Services</a>
+                </li>
+                <li class="txtaln">
+                    <a href="#sec-4">Projects</a>
+                </li>
+                <li class="txtaln">
+                    <a href="#sec-5">Reviews</a>
+                </li>
 
             </ul>
         </div>
@@ -361,6 +387,7 @@
         <br>
         <br>
         
+        <!--
         <section>
             <a  href="https://youtube.com" target="_blank">
                 <img class="imagesec" src="youtube_download.jpg" alt="youtube" width="40" height="40">
@@ -373,7 +400,7 @@
             <a href="https://telegram.com" target="_blank">
                 <img class="imagesec" src="tele_download.jpg" alt="telegram" width="30" height="30">
             </a>
-        </section>
+        </section> -->
         
 
      </form>
