@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
 header {
     position: fixed;
     top: 0;
@@ -107,12 +113,6 @@ header {
     float: left;
     right: 250px;
     bottom: -10px;
-}
-
-body {
-    height: 680vh;
-    overflow-x: hidden;
-
 }
 
 .container {
@@ -266,7 +266,7 @@ body {
     color:white;
     background-color: #000;
     width: 100%;
-    height: 140vh;
+    height: 110vh;
 }
    
 
@@ -301,17 +301,18 @@ body {
 
 .box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr)); /* Adjust card width */
     grid-gap: 20px; /* Adjust gap between cards */
 }
 
 .card {
+    position: relative;
+    right: -182px;
     background-color: white;
-    height: 425px;
+    height: 450px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    position: relative;
     overflow: hidden;
 }
 
@@ -369,13 +370,14 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position: relative;
     top: -50px;
+    right: -182px;
     overflow: hidden;
 }
 
 .imgt {
     width: 100px;
     height: 80px;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .txt5 {
@@ -393,7 +395,7 @@ body {
 .box2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjust card width */
-    grid-gap: 20px; /* Adjust gap between cards */
+   /* grid-gap: 1px; /* Adjust gap between cards */
 
 }
 
@@ -579,7 +581,6 @@ body {
     height: 200px;
     position: relative;
     border-radius: 25%;
-    left: 60px;
     padding: 5px;
     bottom: -40px;
 }
@@ -608,7 +609,6 @@ body {
 
 footer {
     width: 100%;
-    height: 100px;
     position: relative;
     bottom: -400px;
 }
