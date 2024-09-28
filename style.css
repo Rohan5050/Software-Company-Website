@@ -1,78 +1,51 @@
-/** {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    width: 100%;
-    overflow-x: hidden;
-}*/
-
-/*
 header {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 99;
-    scroll-behavior: smooth;
-}
-*//*
-.li {
-  background-color: #fff; /* Black background color *//*
-  color: #000;
-  /*position: relative; /* Make it stick/fixed *//*
-  top: 0; /* Stay on top *//*
-  width: 100%; /* Full width *//*
-  transition: top 0.3s; /* Transition effect when sliding down (and up) *//*
- /* padding: 5px 10px;*//*
+  padding: 5px 10px;
   scroll-behavior: smooth;
 }
 
-/* Style the navbar links */
- 
+.logo {
+  color: #15cf4d;
+}
+
+#navbar a {
+float: left;
+display: block;
+color: #1be94b;
+padding: 15px;
+text-decoration: none;
+}
+
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #1faf4a;
+  transform-origin: right;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
 
 .navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
+  transform-origin: left;
+  transform: scaleX(1);
 }
+
+
+
 /*
-
-.btnLogin-popup {
-    background: transparent;
-    border: 1px solid black;
-    background-color: #15cf4d;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    color: black;
-    font-weight: 550;
-    transition: .5s;
-    padding: 5px;
-    width: 90px;
-    height: 35px;
-    position: relative;
-    top: -22px;
-    margin-right: 198px;
-    float: right;
-
-}
-
-
-.navigation .btnLogin-popup:hover {
-    background: #fff;
-    /*color: #162938;*//*
-
-}*/
-
-.logo {
-    color: rgb(91, 207, 91);
-    position: relative;
-    right: -20px;
-}
-
-
 .img2 {
     display: block;
     float: right;
@@ -83,267 +56,8 @@ header {
     width: 75vh;
     height: 50vh;
 }
-
-/*
-.secondsection {
-    color:white;
-    background-color: #000;
-    width: 100%;
-    height: 110vh;
-}
-   
-
-.right-section {
-    display: block;
-    text-align: center;
-    padding: 75px;
-}
-
-.txt1 {
-    padding: 20px;
-    font-size: 22px;
-}
-
-
-@keyframes moveForward {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-    
-}
-
-@keyframes movebackwards {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(0); }
-    
-}
-
-.box {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr)); 
-    grid-gap: 20px; 
-}
-
-.card {
-    background-color: white;
-    height: 465px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.card:hover img {
-    transform: scale(1.2);
-}
-
-.card img {
-    width: 100%;
-    height: 150px;
-    transition: transform 0.3s ease;
-}
-
-.card-content {
-    color: black;
-    font-size: 30px;
-}
-
-.para1 {
-    font-size: 20px;
-}
-
-.card-content h3 {
-    margin-top: 0;
-}
-
-.card-content p {
-    margin-bottom: 0;
-}
-*/
-
-
-/*
-.fourthsection {
-    background-color: #e2dede;
-    width: 100%;
-    height: 400vh;
-}
-
-.box2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr)); 
-    grid-gap: 5px; 
-
-}
-
-.card2 {
-    background-color: white;
-    height: 250px;
-    padding: 20px;
-    margin-right: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.imgt1 {
-    width: 250px;
-    height: 180px;
-    margin-left: 55px;
-}
-
-
-#grid-item {
-    position: relative;
-    perspective: 1000px; /* Perspective for 3D effect *//*
-}
-
-.grid1 {
-    text-align: center;
-}
-
-.imgt2 {
-    width: 250px;
-    height: 180px;
-    padding: 10px;
-    margin: 22px;
-    margin-right: 20px;
-}
-
-#front, #back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; 
-}
-
-#front {
-    background-color: #f0f0f0;
-}
-
-#back {
-    background-color: #e0e0e0;
-    transform: rotateY(180deg); 
-}
-
-#grid-item:hover #front {
-    transform: rotateY(-180deg); 
-}
-
-#grid-item:hover #back {
-    transform: rotateY(0deg); 
-}
-
-.para3 {
-    padding: 12px;
-    font-size: 22px;
-}
-
-.btn5 {
-    display: inline-block;
-    margin-left: 100px;
-    padding: 10px 20px;
-    background-color: #007bff; 
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
 */
 /*
-.card3 {
-    background-color: white;
-    height: 260px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-
-.parallax {
-  
-    background-image: url("Testimonial.png");
-    filter: grayscale(60%);
-  
-
-    min-height: 600px; 
-  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.para5 {
-    color: #15cf4d;
-    font-size: 40px;
-    position: relative;
-    bottom: -32px;
-}
-
-.para6 {
-    color: #fff;
-    padding-bottom: 12px;
-}
-
-.para7 {
-    color: grey;
-    font-size: 22px;
-
-}
-
-.txt6 {
-    text-align: center;
-    font-size: 22px;
-    padding: 12px;
-}
-
-.txt7 {
-    position: relative;
-    float: left;
-    bottom: -30px;
-    font-size: 18px;
-}
-
-.txt8 {
-    position: relative;
-    float: left;
-    color: grey;
-    right: 70px;
-    bottom: -50px;
-    font-size: 12px;
-}
-
-.txt9 {
-    position: relative;
-    float: left;
-    color: grey;
-    right: 110px;
-    bottom: -50px;
-    font-size: 12px;
-}
-
-.txt10 {
-    position: relative;
-    float: left;
-    color: grey;
-    right: 120px;
-    bottom: -50px;
-    font-size: 12px;
-}
-
-.sym1 {
-    position: relative;
-    float: right;
-    bottom: -30px;
-}
-*/
 .sixthsection {
     width: 100%;
     height: 150px;
@@ -377,131 +91,7 @@ header {
   justify-content: center;
 
 }
-
-
-/*
-.seventhsection {
-    width: 100%;
-    height: 450px;
-    background-color: #15cf4d;
-}
 */
-
-/*
-.footer-first {
-    background-color:#0e0e1a;
-    color: #fff;
-    
-}
-
-.text-grey {
-    position: relative;
-    padding: 5px;
-    margin-left: 60px;
-    bottom: -35px;
-    
-}
-
-footer {
-    width: 100%;
-    position: relative;
-    bottom: -400px;
-}
-
-.footer-right {
-    display: flex;
-    width: 90px;
-    height: 90px;
-    float: right;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    border-radius: 50%;
-}
-
-.footer ul {
-    list-style: none;
-}
-
-.img-1 {
-    width: 60px;
-    height: 60px;
-    position: relative;
-    border-radius: 50%;
-    right: -50px;
-    padding: 5px;
-    bottom: -40px;
-}
-
-.list {
-    position: relative;
-    text-align: center;
-    top: -165px;
-}
-
-.txtaln {
-    text-align: inherit;
-    padding: 5px;
-}
-
-.txtsp {
-    padding: 12px;
-}
-
-.footertxt {
-    color: white;
-    padding: 15px;
-}
-
-.formaln {
-    position: relative;
-    float: right;
-    bottom: 380px;
-    right: 80px;
-    margin: 12px;
-}
-
-.labeltxt {
-    color: #fff;
-}
-
-.footer > div {
-    width: 223px;
-
-}
-
-.imagesec {
-    width: 60px;
-    height: 50px;
-    position: relative;
-    border-radius: 50%;
-    top: 50px;
-    right:-60px;
-    padding: 8px;
-
-    
-}
-
-#reset {
-    position: relative;
-    right: -10px;
-
-}
-
-footer .footer-rights {
-    background-color: #000;
-    color: grey;
-    padding: 9px 0;
-
-}
-
-.footer-rights {
-    position: relative;
-    text-align: center;
-    
-}
-
-
 
 
 
@@ -541,52 +131,6 @@ body {
     color: white;
     text-decoration: none;
   }
-
-/**************************************************** First Section *****************************************************************************\
-/*About Section*/
-  
-  .firstsection {
-    width: 100%;
-    height: auto;
-
-  } 
-  
-  .img2 {
-    width: 75vh;
-    height: 50vh;
-    margin: 12px 12px 22px 22px;
-  }
-
-  .abt {
-    font-size: 16px;
-    color: green;
-    letter-spacing: 2px;
-    margin: 12px;
-
-}
-
-.desc {
-    color: black;
-    font-size: 35px;
-    margin: 22px;
-}
-
-.para {
-    font-size: 18px;
-    margin: 22px;
-}
-
-
-.btn1 {
-  color: white;
-  background-color: rgb(102, 243, 102);
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 18px;
-  border-style: double;
-  position: relative;
-  left: 50px;
-}
 
 
 /****************************************************** Section-1 Home ************************************************************************************/
@@ -762,8 +306,56 @@ body {
 
  .secondsection {
   height: 320vh;
+ }
 }
+
+
+/**************************************************** First Section *****************************************************************************\
+/*About Section*/
+  
+  .firstsection {
+    width: 100%;
+    height: auto;
+
+  } 
+  
+  .img2 {
+    width: 75vh;
+    height: 50vh;
+    margin: 12px 12px 22px 22px;
+  }
+
+  .abt {
+    font-size: 16px;
+    color: green;
+    letter-spacing: 2px;
+    margin: 12px;
+
 }
+
+.desc {
+    color: black;
+    font-size: 35px;
+    margin: 22px;
+}
+
+.para {
+    font-size: 18px;
+    margin: 22px;
+}
+
+
+.btn1 {
+  color: white;
+  background-color: rgb(102, 243, 102);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  border-style: double;
+  position: relative;
+  left: 50px;
+}
+
 
 /**************************************Second Section********************************************/
 /* Services*/
@@ -927,7 +519,7 @@ body {
 /* General styling for section */
 .thirdsection {
   padding: 50px 20px;
-  background-color: #f0f0f0; /* Optional background color */
+  background-color: #f0f0f0; 
 }
 
 .rightsection-sec3 {
@@ -964,10 +556,11 @@ body {
   overflow: hidden;
 }
 
-.card1 img.imgt {
+.imgt {
   width: 100px;
-  height: 110px;
+  height: 80px;
   object-fit: cover;
+  margin: 8px;
 }
 
 .card-content {
@@ -1401,11 +994,11 @@ body {
 /**************************************************Footer***********************************/
 
 /* Footer section */
-/* General styling for the footer */
+
 footer {
   width: 100%;
   position: relative;
-  background-color: #0e0e1a; /* Moved from .footer-first */
+  background-color: #0e0e1a; 
 }
 
 /* Footer first section */
@@ -1413,7 +1006,7 @@ footer {
   color: #fff;
   padding: 40px 20px;
   display: flex;
-  justify-content: space-between; /* Align items to space them evenly */
+  justify-content: space-between; 
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
@@ -1422,7 +1015,7 @@ footer {
   font-size: 30px;
   font-family: Verdana;
   padding: 5px;
-  margin-left: 60px; /* Adjust margins on larger screens */
+  margin-left: 60px; 
 }
 
 .text-para {
@@ -1540,13 +1133,6 @@ input {
   }
 }
 
-
-
-
-/*
-  .secondsection, .thirdsection, .fourthsection, .fifthsection, .sixthsection {
-    padding: 60px 20px;
-  }
   
   /*.firstsection h3,*/ .secondsection h3, .thirdsection h4, .sixthsection h3 {
     margin-bottom: 20px;
