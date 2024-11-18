@@ -282,7 +282,7 @@ body {
 
 .desc {
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     margin: 22px;
 }
 
@@ -301,6 +301,19 @@ body {
   border-style: double;
   position: relative;
   left: 50px;
+}
+
+@media (max-width: 768px) {
+
+  .desc {
+    font-size: 22px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  
 }
 
 
@@ -470,7 +483,7 @@ body {
 /* General styling for section */
 .thirdsection {
   padding: 50px 20px;
-  background-color: #f0f0f0; 
+  background-color: rgb(208, 200, 200); 
 }
 
 .rightsection-sec3 {
@@ -485,7 +498,7 @@ body {
 
 .para2 {
   font-size: 1.2rem;
-  color: #777;
+  color: #333;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -598,7 +611,7 @@ body {
 /* General Styling for Section */
 .fourthsection {
   padding: 50px 20px;
-  background-color: #f4f4f4; /* Optional background color */
+  background-color: #f4f4f4; 
 }
 
 .rightsection-sec4 {
@@ -623,7 +636,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; /* Ensures grid items wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 #grid-item {
@@ -768,7 +781,7 @@ body {
 }*/
 
 .parallax {
-    background-image: url("Testimonial.png");
+    background-image: url("Testimonial.jpg");
     filter: grayscale(30%);
     width: 100%;
     background-attachment: fixed;
@@ -945,23 +958,27 @@ body {
 /**************************************************Footer***********************************/
 
 /* Footer section */
-
+/*
 footer {
   width: 100%;
   position: relative;
   background-color: #0e0e1a; 
 }
 
-/* Footer first section */
+.logo {
+  display: flex;
+  justify-content: left;
+}
+
+/* Footer first section *//*
 .footer-first {
   color: #fff;
   padding: 40px 20px;
   display: flex;
   justify-content: space-between; 
-  flex-wrap: wrap; 
 }
 
-/* Text styles */
+/* Text styles *//*
 .text-grey {
   font-size: 30px;
   font-family: Verdana;
@@ -1000,14 +1017,14 @@ footer {
   color: #0056b3;
 }
 
-/* Form alignment */
+/* Form alignment *//*
 .formaln {
   padding: 5px;
   margin: 12px;
   max-width: 300px; 
 }
 
-/* Input and label styling */
+/* Input and label styling *//*
 input {
   padding: 5px;
   margin: 5px;
@@ -1017,7 +1034,7 @@ input {
   color: #0056b3;
 }
 
-/* Flexbox for footer rights */
+/* Flexbox for footer rights *//*
 .footer-rights {
   position: relative;
   text-align: center;
@@ -1026,10 +1043,154 @@ input {
   padding: 9px 0;
   width: 100%; 
 }
+*/
+
+/* Ensure the footer spans the full width */
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #0e0e1a; 
+}
+
+/* Logo alignment below the text paragraph */
+.logo-ft {
+  display: flex; /* Ensure logo is on its own line */
+  width: 340px;
+  height: 220px;
+  border-radius: 50%;
+  position: relative;
+  left: -25em;
+  bottom: -16em;
+}
+
+/* Footer first section: Align items horizontally */
+.footer-first {
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around; 
+}
+
+/* Text paragraph section */
+.text-para {
+  position: relative;
+  left: -10em;
+  bottom: -6em;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+
+}
+
+.text-grey {
+  font-size: 30px;
+  font-family: Verdana;
+  margin-left: 60px; 
+}
+
+/* Quick links section */
+.list {
+  list-style: none;
+  color: #0056b3;
+  position: relative;
+  justify-content: center;
+  width: 60%; /* Allocate space */
+}
+
+.txtsp ,.txtaln {
+  position: relative;
+  left: -5em;
+  margin: 1em;
+}
+
+/* Form alignment section */
+.formaln {
+  padding: 5px;
+  margin: 0;
+  width: 30%; /* Allocate space */
+  max-width: none; /* Remove max-width constraint */
+}
+
+/* Footer rights section */
+.footer-rights {
+  position: relative;
+  text-align: center;
+  background-color: #000;
+  color: grey;
+  padding: 9px 0;
+  width: 100%;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 1024px) {
+  .footer-first {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .list, .formaln {
+    width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center-align content */
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+
+  .logo-ft {
+    width: 150px;
+    height: 120px;
+    left: 0; /* Center closer to viewport */
+    bottom: -1em; /* Adjust vertical position */
+  }
+
+  .text-grey {
+    margin-left: 0; 
+    text-align: center; 
+}
+
+.text-para {
+    left: 0; 
+    bottom: 0; 
+    text-align: center; 
+}
+
+.txtsp {
+  left: 0; 
+}
+
+.txtaln {
+  left: 0;
+  text-align: center; 
+}
 
 
 
-/* Medium devices  */
+  
+}
+
+
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .logo-ft {
+    width: 150px;
+    height: 120px;
+    left: 0; /* Center closer to viewport */
+    bottom: -1em; /* Adjust vertical position */
+  }
+}
+
+/* Very small devices (e.g., small smartphones) */
+@media (max-width: 480px) {
+  .logo-ft {
+    width: 150px;
+    height: 120px;
+    left: 0; /* Fully center the logo */
+    bottom: -1em; /* Adjust for a compact view */
+  }
+}
+
+
+/* Medium devices  *//*
 @media (max-width: 992px) {
   .footer-first {
       flex-direction: column; 
@@ -1072,11 +1233,17 @@ input {
 /* Small devices (max-width: 576px) */
 @media (max-width: 576px) {
   .footer-first {
-      padding: 10px; 
+      padding: 20px; 
   }
 
   .text-grey {
       font-size: 18px;
+      position: relative;
+      justify-content: center;
+  }
+
+  .text-para {
+    text-align: center;
   }
 
   .footer-rights {
